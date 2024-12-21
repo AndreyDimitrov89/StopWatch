@@ -3,7 +3,9 @@ let interval = null;
 const time = document.getElementById("time")
 
 function setTime() {
-    time.innerHTML = secondsELapsed;
+    const minutes = Math.floor(secondsELapsed / 60)
+    const seconds = secondsELapsed % 60;
+    time.innerHTML = `${minutes}:${seconds}`;
 }
 function setTime() {
     
